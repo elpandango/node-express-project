@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Key4mate - Catalog</title>
+    <link rel="shortcut icon" href="/library/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/css/clear.css">
+    <link rel="stylesheet" href="/dist/css/fanta.css">
+    <link rel="stylesheet" href="/dist/css/slidebars.css">
+    <link rel="stylesheet" href="/dist/css/style.css">
+</head>
+<body>
+
+<div id="fixed-top" class="sb-slide">
+    <header class="menu">
+        <div class="content">
+            <div id="toggleBar" class="sb-toggle-right">
+                <div class="hm-line"></div>
+                <div class="hm-line"></div>
+                <div class="hm-line"></div>
+            </div>
+            <a href="/dist/index.html" class="header-logo">
+                <img src="/library/img/logo.png" alt="">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/dist/pages/catalog.html">Каталог уроков</a></li>
+                    <li><a href="/dist/pages/blog.html">Блог</a></li>
+                    <li><a href="/dist/pages/about.html">О key4mate</a></li>
+                    <li><a href="/dist/pages/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+
+            <div class="customer-group">
+                <!--НЕЗАРЕГИСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ-->
+
+                <div class="login-box">
+                    <a href="/dist/pages/login.html">Вход / Регистрация</a>
+                </div>
+
+                <!--ЗАРЕГИСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ-->
+
+                <ul class="logged-in">
+                    <!--<li>-->
+                    <!--<a href="" class="profile"><span class="icon icon-person"></span> Мой профиль</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="">Мои покупки</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="" class="logout">Выход</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+</div>
+
+<div id="sb-site">
+    <div class="content-bg">
+        <div class="content main">
+            <div class="container breadcrumbs">
+                <span>Каталог уроков</span>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="container catalog-head">
+                <div class="tags">
+                    <a href="/dist/pages/catalog.html" class="tag-item active">Весь каталог</a>
+                    <a href="/dist/pages/video-courses.html" class="tag-item">Видеокурсы</a>
+                    <a href="/dist/pages/lessons.html" class="tag-item">Уроки</a>
+                    <a href="/dist/pages/special.html" class="tag-item">Спец. предложение</a>
+                    <a href="/dist/pages/free-lessons.html" class="tag-item">Free уроки</a>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="search">
+                    <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form"
+                          id="formSearch">
+                        <input type="text" placeholder="" name="s" rel="nofollow">
+
+                        <div id="search" onclick="$('#formSearch').submit()">
+                            <span class="icon icon-search"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+                <hr class="blue-line">
+            </div>
+            <div class="container">
+                <div class="filters">
+                    <form action="/dist/pages/search-result.html" method="get">
+                        <select name="authors" id="authors">
+                            <option value="1" selected>Все авторы</option>
+                        </select>
+                        <select name="category" id="category">
+                            <option value="1" selected>Весь каталог</option>
+                        </select>
+                        <button class="button-buy">Поиск</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="webinar">
+                    <div class="left-side">
+                        <p class="title">Вебинар</p>
+
+                        <div class="image"><img src="/library/img/userpic-100x100.png" alt=""></div>
+                        <div class="details">
+                            <p class="time">16:00</p>
+
+                            <p class="date">22 ноября 2012</p>
+
+                            <p class="author">Евгений Богаченко</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="/dist/pages/detailed/webinar-detailed.html" class="description">Расчет приливо-отливных течений по гармоническим постоянным</a>
+
+                        <div class="button-buy">Купить 1000 грн.</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="banner"></div>
+            </div>
+            <div class="container">
+                <header class="catalog-title">Популярные видеокурсы</header>
+
+                <div class="catalog">
+                    <div class="catalog-item video new">
+                        <a href="/dist/pages/detailed/video-courses-detailed.html" class="title mobile">Мореходная астрономия астрономия</a>
+
+                        <div class="image-box">
+                            <a href="/dist/pages/detailed/video-courses-detailed.html" class="image"><img src="/library/img/banner-img-1.png" alt=""></a>
+                        </div>
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/video-courses-detailed.html" class="title">Мореходная астрономия астрономия</a>
+
+                            <p class="course-duration">Видеокурс: 14 уроков </p>
+
+                            <p class="description">Определение места судна по трём светилам</p>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1000 грн.</div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="catalog-item video free new">
+                        <a href="/dist/pages/detailed/video-courses-detailed.html" class="title mobile">Emergency Navigation</a>
+
+                        <div class="image-box">
+                            <a href="/dist/pages/detailed/video-courses-detailed.html" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+                        </div>
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/video-courses-detailed.html" class="title">Emergency Navigation</a>
+
+                            <p class="course-duration">Видеокурс: 14 уроков </p>
+
+                            <p class="description">Мореходная астрономия в аварийных условиях или определение
+                                местоположения по Солнцу</p>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Скачать</div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <a class="read-more" href="/dist/pages/video-courses.html">Все видеокурсы</a>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <header class="catalog-title">Популярные уроки</header>
+
+                <div class="catalog lessons">
+                    <div class="lessons-item new">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Расчет поправки компаса при восходе и закате (пример 1)</a>
+
+                            <p class="description">Мореходная астрономия астрономия</p>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1200 грн</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item free">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Радиосигналы точного времени</a>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Скачать</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item new">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Рекомендации к ведению корректуры и виды выпусков Извещений
+                                Мореплавателям</a>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1200 грн</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item new">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Рекомендации к ведению корректуры и виды выпусков Извещений
+                                Мореплавателям</a>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1200 грн</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item new">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Расчет поправки компаса при восходе и закате (пример 1)</a>
+
+                            <p class="description">Мореходная астрономия астрономия</p>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1200 грн</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item free">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Радиосигналы точного времени</a>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Скачать</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item new">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Рекомендации к ведению корректуры и виды выпусков Извещений
+                                Мореплавателям</a>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1200 грн</div>
+                        </div>
+                    </div>
+                    <div class="lessons-item new">
+                        <a href="" class="image"><img src="/library/img/banner-img-4.png" alt=""></a>
+
+                        <div class="description-box">
+                            <a href="/dist/pages/detailed/lessons-detailed.html" class="title">Рекомендации к ведению корректуры и виды выпусков Извещений
+                                Мореплавателям</a>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1200 грн</div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <a class="read-more right" href="/dist/pages/lessons.html">Все уроки</a>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="container">
+                <header class="catalog-title">Популярные спец предложения</header>
+
+                <div class="catalog">
+                    <div class="catalog-item special">
+                        <a href="/dist/pages/detailed/video-courses-detailed.html" class="title">Kongsberg DPS & PRS</a>
+
+                        <p class="discount mobile">Экономите 160 грн.</p>
+
+                        <div class="image-box">
+                            <a href="" class="image"><img src="/library/img/banner-img-2.png" alt=""></a>
+                        </div>
+                        <div class="description-box">
+                            <p class="discount">Экономите 160 грн.</p>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 1000 грн.</div>
+                            <p class="description">Kongsberg DP System ver.7 + SpotTrack PRS + RADius PRS</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="catalog-item special">
+                        <a href="/dist/pages/detailed/video-courses-detailed.html" class="title">Мощный старт</a>
+
+                        <p class="discount mobile">Экономите 190 грн.</p>
+
+                        <div class="image-box">
+                            <a href="" class="image"><img src="/library/img/banner-img-3.png" alt=""></a>
+                        </div>
+                        <div class="description-box">
+                            <p class="discount">Экономите 190 грн.</p>
+
+                            <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+
+                            <div class="button-buy">Купить 400 грн.</div>
+                            <p class="description">СОДЕРЖАНИЕ: Руководство молодого штурмана (New revision)</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <a class="read-more" href="/dist/pages/special.html">Все спецпредложения</a>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="text">
+                    Как показывает практика, молодым судоводителям на судне приходится не сладко. Помимо
+                    ответственности и налаживания отношений с экипажем, возникает много вопросов по самой работе и
+                    по навигационному оборудованию. Каждое судно по-своему особенное и нужно подстраиваться.
+                    <br><br>
+                    На фоне всего этого, времени на самостоятельные поиски ответов почти нет. Поэтому необходимо
+                    подготавливаться заранее и основательно. Как говориться – “для себя”. И именно эта подготовка
+                    повлияет на Ваш последующий рост и условия работы.
+                    <br><br>
+                    Проект Key4Mate в первую очередь был создан для тех, кто только начинает осваивать морскую
+                    профессию. Кроме того, видеоуроки и другие обучающие материалы оказываются полезны и тем, кто
+                    уже давно в море. Вы хотите заложить надежный фундамент знаний для последующего роста? Тогда
+                    этот проект и для вас.
+                    <br><br>
+                    Не ждите подходящего момента чтобы стать лучше. Занимая активную позицию в жизни и перенимая
+                    ценный опыт, уже завтра можно ощутить результаты своего труда. Мы надеемся, что знания,
+                    изложенные в наших обучающих материалах, а также вся дополнительная деятельность проекта,
+                    помогут вам в этом.
+
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <footer class="main">
+            <div class="content">
+                <div class="social">
+                    <ul>
+                        <li><a href="http://vkontakte.ru/key4mate" class="icon icon-fb"></a></li>
+                        <li><a href="http://www.facebook.com/home.php?sk=group_171832906173276"
+                               class="icon icon-vk"></a></li>
+                        <li><a href="http://www.youtube.com/user/Key4mate" class="icon icon-youtube"></a></li>
+                        <li><a href="skype:bogachenko4?call" class="icon icon-skype"></a></li>
+                    </ul>
+                </div>
+                <div class="copyrights">
+                    <p>&#169; 2010-2015 <span>Key4mate — ваш ключ к успеху!&nbsp;</span><span class="created-by">Created by <a
+                            href="http://www.groupkb.com">groupkb</a></span></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<div class="sb-slidebar sb-right bg-white sb-width-custom" data-sb-width="320px">
+    <div class="content">
+        <div class="btn-close sb-toggle-right"><span class="icon icon-close"></span></div>
+
+        <ul>
+            <li class="search">
+                <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form"
+                      id="formSearch">
+                    <input type="text" placeholder="" name="s" rel="nofollow">
+
+                    <div id="search" onclick="$('#formSearch').submit()">
+                        <span class="icon icon-search"></span>
+                    </div>
+                </form>
+            </li>
+            <li><a href="/dist/pages/catalog.html">Каталог уроков</a></li>
+            <li><a href="/dist/pages/blog.html">Блог</a></li>
+            <li><a href="/dist/pages/about.html">О key4mate</a></li>
+            <li><a href="/dist/pages/contacts.html">Контакты</a></li>
+
+            <!--ДЛЯ НЕЗАРЕГИСТРИРОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ-->
+            <li><a href="/dist/pages/login.html">Вход</a></li>
+            <li><a href="/dist/pages/login.html">Регистрация</a></li>
+
+            <!--ДЛЯ ЗАРЕГИСТРИРОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ-->
+            <li><a href="/dist/pages/profile.html">Мой профиль</a></li>
+            <li><a href="/dist/pages/order-history.html">Мои покупки</a></li>
+            <li><a href="">Выход</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<script src="/dist/js/jquery.min.js"></script>
+<script src="/dist/js/slidebars.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+
+            //***боковое слайд-меню
+            var Slidebars = new $.slidebars({
+                scrollLock: true
+            });
+
+            function eventHandler(e) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+
+            $('.sb-toggle-right').on('click', function (e) {
+                eventHandler(e);
+                Slidebars.slidebars.toggle('left');
+            });
+
+        });
+    })(jQuery);
+
+</script>
+</body>
+</html>

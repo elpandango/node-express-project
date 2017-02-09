@@ -1,0 +1,131 @@
+<!-- views/pages/about.ejs -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <% include ../partials/head %>
+</head>
+
+
+<body>
+
+<% include ../partials/header %>
+
+
+<div id="sb-site">
+    <div class="content-bg">
+
+        <div class="content main">
+            <div class="container breadcrumbs">
+                <span>О key4mate</span>
+                <div class="clearfix"></div>
+                <hr class="blue-line-650">
+            </div>
+            <div class="left-col">
+                <article class="blog about">
+                    <div class="slide-description about">
+                        <header>
+                            <div class="image"><img src="/library/img/userpic-100x100.png" alt=""></div>
+                            <div class="description">
+                                <p>Здравствуйте друзья!</p>
+                                <p>Меня зовут Евгений Богаченко</p>
+                                <p>Я штурман, автор и руководитель проекта Key4mate.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </header>
+                        <div class="text">
+                            Главная цель проекта: помочь судоводителям подготовится к профессии и
+                            поддерживать их подсказками в ходе работы.
+                            <br><br>
+                            Создавая первый видеоурок мне хотелось сказать свое слово ЗА необходимость в
+                            изменении подходов подготовки молодых специалистов. Видеоуроки, которые
+                            систематизировали бы все знания полученные из разных источников, показались мне
+                            современным и очевидным решением.
+                            <br><br>
+                            Сегодня Key4mate это интернет-ресурс для общения, приобретения и обмена
+                            знаниями.
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+
+            </div>
+            <div class="right-col">
+                <div class="col-item desktop">
+                    <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form"
+                          id="formSearch">
+                        <input type="text" placeholder="" name="s" rel="nofollow">
+
+                        <div id="search" onclick="$('#formSearch').submit()">
+                            <span class="icon icon-search"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-item">
+                    <header>
+                        <p>Рекомендуем</p>
+                        <a class="read-more" href="">Весь каталог</a>
+                    </header>
+                    <div class="catalog-item video">
+                        <h3 class="title">Мореходная астрономия астрономия</h3>
+
+                        <a href="" class="image"><img src="/library/img/banner-img-1.png" alt=""></a>
+
+                        <p class="course-duration">Видеокурс: 14 уроков </p>
+
+                        <p class="description">Определение места судна по трём светилам</p>
+
+                        <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+                        <a href="" class="button-buy">Купить 1000 грн.</a>
+                    </div>
+                    <div class="catalog-item special">
+                        <h3 class="title">Kongsberg DPS & PRS</h3>
+
+                        <p class="discount">Экономите 160 грн.</p>
+
+                        <a href="" class="image"><img src="/library/img/banner-img-2.png" alt=""></a>
+
+                        <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+                        <a href="" class="button-buy">Купить 1200 грн.</a>
+
+                        <p class="description">Kongsberg DP System ver.7 + SpotTrack PRS + RADius PRS</p>
+                    </div>
+                </div>
+                <div class="col-item">
+                    <header>Рекомендуем прочитать</header>
+                    <ul class="recommended">
+                        <li>
+                            <a class="comment-target" href="">Неполадки SpotTrack и способы их решения</a>
+                        <span class="info">
+                            <a class="js-comments" href=""><span class="icon icon-comments"></span>2</a>
+                            <a class="js-views" href=""><span class="icon icon-views"></span>24</a>
+                        </span>
+                        </li>
+                        <li>
+                            <a class="comment-target" href="">Неполадки SpotTrack и способы их решения</a>
+                        <span class="info">
+                            <a class="js-comments" href=""><span class="icon icon-comments"></span>2</a>
+                            <a class="js-views" href=""><span class="icon icon-views"></span>24</a>
+                        </span>
+                        </li>
+                        <li>
+                            <a class="comment-target" href="">Неполадки SpotTrack и способы их решения</a>
+                        <span class="info">
+                            <a class="js-comments" href=""><span class="icon icon-comments"></span>2</a>
+                            <a class="js-views" href=""><span class="icon icon-views"></span>24</a>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+
+        <% include ../partials/footer %>
+
+</body>
+</html>

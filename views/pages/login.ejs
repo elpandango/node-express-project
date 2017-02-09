@@ -1,0 +1,86 @@
+<!-- views/pages/login.ejs -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <% include ../partials/head %>
+</head>
+
+
+<body>
+
+<% include ../partials/header %>
+
+
+<div id="sb-site">
+    <div class="content-bg">
+
+        <div class="content main">
+            <div class="container">
+                <div class="content breadcrumbs">
+                    <span>Вход/Регистрация</span>
+                    <div class="clearfix"></div>
+                    <hr class="blue-line-650">
+                </div>
+            </div>
+            <div class="left-col">
+                <div class="form-container min-h-700">
+
+                    <form class="left" id="formLogin" name="formLogin" action="/login/" method="post">
+                        <input type="hidden" name="fn" value="login">
+                        <header class="catalog-title">Вход в систему</header>
+                        <label class="error-msg">Такого e-mail адреса в нашей базе
+                            не существует</label>
+                        <input type="email" name="login" placeholder="Ваш e-mail" value="" required="">
+                        <input type="password" placeholder="Ваш пароль" name="pass" required="">
+                        <button class="button-buy" onclick="$('#formLogin').submit()">Вход</button>
+                        <a href="/dist/pages/recovery.html">Забыли пароль?</a>
+                    </form>
+                    <form class="right" id="formReg" action="/login/" method="post">
+                        <input type="hidden" name="fn" value="reg">
+                        <header class="catalog-title">Регистрация</header>
+                        <input type="email" placeholder="Ваш email*" name="f_login" required="">
+                        <input type="text" placeholder="Ваше имя*" name="f_name" required="">
+                        <input type="password" placeholder="Ваш пароль*" name="f_pass" required="">
+                        <input type="password" placeholder="Повторите свой пароль*" name="f_pass2" required="">
+                        <label class="number-verification">
+                            <input type="text" name="f_capcha" placeholder="Код проверки*" required="">
+                            <span class="captcha">
+                                <img src="http://placehold.it/114x40" style="width: 114px; height: 40px;" alt="captcha">
+                            </span>
+                            <span class="clearfix"></span>
+                        </label>
+                        <input type="checkbox" id="agreement" name="rule" required="" value="1">
+                        <label for="agreement" class="checkbox">
+                            <a href="http://pay.key4mate.com.ua/usloviya/">Я соглас(ен/на) с правилами</a>
+                        </label>
+                        <div class="clearfix"></div>
+                        <button class="button-buy">Регистрация</button>
+                        <p class="notes">* поля являются обязательными для заполнения</p>
+                    </form>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+            <div class="right-col">
+                <div class="col-item desktop">
+                    <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form" id="formSearch">
+                        <input type="text" placeholder="" name="s" rel="nofollow">
+
+                        <div id="search" onclick="$('#formSearch').submit()">
+                            <span class="icon icon-search"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+
+        <% include ../partials/footer %>
+
+</body>
+</html>

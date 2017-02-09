@@ -1,0 +1,124 @@
+<!-- views/pages/contacts.ejs -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <% include ../partials/head %>
+</head>
+
+
+<body>
+
+<% include ../partials/header %>
+
+<div id="sb-site">
+    <div class="content-bg">
+
+        <div class="content main">
+            <div class="container breadcrumbs">
+                <span>Контакты key4mate</span>
+
+                <div class="clearfix"></div>
+                <hr class="blue-line-650">
+            </div>
+            <div class="left-col">
+                <article class="blog contacts">
+                    <div class="slide-description contacts">
+                        <div class="contact-info">Email: <a href="mailto:key4mate@gmail.com">key4mate@gmail.com</a>
+                        </div>
+                        <div class="contact-info">Skype: <a href="">bogachenko4</a> (Евгений Богаченко)</div>
+                        <div class="make-comment" id="make-comment">
+                            <form action="" method="post" id="contactForm">
+                                <p class="error-msg">Пожалуйста заполните все поля для размещения своего комментария</p>
+                                <input type="text" id="answer-name" placeholder="Ваше имя" name="message-name"
+                                       required="">
+                                <input type="email" id="answer-email" placeholder="Ваш e-mail" name="message-mail"
+                                       required="">
+                                <textarea name="answer-body" id="answer-body" cols="30" rows="10"
+                                          required=""></textarea>
+                                <button class="button-blue add-comment">Отправить</button>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+
+            </div>
+            <div class="right-col">
+                <div class="col-item desktop">
+                    <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form"
+                          id="formSearch">
+                        <input type="text" placeholder="" name="s" rel="nofollow">
+
+                        <div id="search" onclick="$('#formSearch').submit()">
+                            <span class="icon icon-search"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-item">
+                    <header>
+                        <p>Рекомендуем</p>
+                        <a class="read-more" href="">Весь каталог</a>
+                    </header>
+                    <div class="catalog-item video">
+                        <h3 class="title">Мореходная астрономия астрономия</h3>
+
+                        <a href="" class="image"><img src="/library/img/banner-img-1.png" alt=""></a>
+
+                        <p class="course-duration">Видеокурс: 14 уроков </p>
+
+                        <p class="description">Определение места судна по трём светилам</p>
+
+                        <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+                        <a href="" class="button-buy">Купить 1000 грн.</a>
+                    </div>
+                    <div class="catalog-item special">
+                        <h3 class="title">Kongsberg DPS & PRS</h3>
+
+                        <p class="discount">Экономите 160 грн.</p>
+
+                        <a href="" class="image"><img src="/library/img/banner-img-2.png" alt=""></a>
+
+                        <p class="author">Автор: <span class="js-author">Евгений Богаченко</span></p>
+                        <a href="" class="button-buy">Купить 1200 грн.</a>
+
+                        <p class="description">Kongsberg DP System ver.7 + SpotTrack PRS + RADius PRS</p>
+                    </div>
+                </div>
+                <div class="col-item">
+                    <header>Рекомендуем прочитать</header>
+                    <ul class="recommended">
+                        <li>
+                            <a class="comment-target" href="">Неполадки SpotTrack и способы их решения</a>
+                        <span class="info">
+                            <a class="js-comments" href=""><span class="icon icon-comments"></span>2</a>
+                            <a class="js-views" href=""><span class="icon icon-views"></span>24</a>
+                        </span>
+                        </li>
+                        <li>
+                            <a class="comment-target" href="">Неполадки SpotTrack и способы их решения</a>
+                        <span class="info">
+                            <a class="js-comments" href=""><span class="icon icon-comments"></span>2</a>
+                            <a class="js-views" href=""><span class="icon icon-views"></span>24</a>
+                        </span>
+                        </li>
+                        <li>
+                            <a class="comment-target" href="">Неполадки SpotTrack и способы их решения</a>
+                        <span class="info">
+                            <a class="js-comments" href=""><span class="icon icon-comments"></span>2</a>
+                            <a class="js-views" href=""><span class="icon icon-views"></span>24</a>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <% include ../partials/footer %>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- views/pages/error.ejs -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <% include ./partials/head %>
+</head>
+
+
+<body>
+
+<header>
+    <% include ./partials/header %>
+</header>
+
+
+<div id="sb-site">
+    <div class="content-bg">
+
+        <div class="content">
+            <div class="container min-h-700">
+                <div class="page-not-found">
+                    <div class="left-side">
+                        <header>Ошибка 404</header>
+                        <p>Несуществующая страница
+                            Страница, которую вы читаете, не существует.</p>
+                        <div class="image mobile">
+                            <img src="/library/img/not-found.jpg" alt="">
+                        </div>
+                        <p class="blockquote">-не то чтобы совсем не попал, -сказал
+                            ПУХ,- но только не попал в шарик</p>
+                        <a href="/dist/index.html" class="read-more">На главную</a>
+                    </div>
+                    <div class="image">
+                        <img src="/library/img/not-found.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <% include ./partials/footer %>
+        </footer>
+
+</body>
+</html>

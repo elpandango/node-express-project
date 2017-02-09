@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Key4mate - Blog</title>
+    <link rel="shortcut icon" href="/library/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/css/clear.css">
+    <link rel="stylesheet" href="/dist/css/fanta.css">
+    <link rel="stylesheet" href="/dist/css/slidebars.css">
+    <link rel="stylesheet" href="/dist/css/style.css">
+</head>
+<body>
+
+<div id="fixed-top" class="sb-slide">
+    <header class="menu">
+        <div class="content">
+            <div id="toggleBar" class="sb-toggle-right">
+                <div class="hm-line"></div>
+                <div class="hm-line"></div>
+                <div class="hm-line"></div>
+            </div>
+            <a href="/dist/index.html" class="header-logo">
+                <img src="/library/img/logo.png" alt="">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/dist/pages/catalog.html">Каталог уроков</a></li>
+                    <li><a href="/dist/pages/blog.html">Блог</a></li>
+                    <li><a href="">О key4mate</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+
+            <div class="customer-group">
+                <!--НЕЗАРЕГИСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ-->
+
+                <div class="login-box">
+                    <a href="/dist/pages/login.html">Вход / Регистрация</a>
+                </div>
+
+
+                <!--ЗАРЕГИСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ-->
+
+                <!--<ul class="logged-in">-->
+                <!--<li>-->
+                <!--<a href="" class="profile"><span class="icon icon-person"></span> Мой профиль</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="">Мои покупки</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="" class="logout">Выход</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+</div>
+
+<div id="sb-site">
+    <div class="content-bg">
+        <div class="content main">
+            <div class="container">
+                <div class="content breadcrumbs">
+                    <span>Вход/Регистрация</span>
+                    <div class="clearfix"></div>
+                    <hr class="blue-line-650">
+                </div>
+            </div>
+            <div class="left-col">
+                <div class="form-container min-h-700">
+
+                    <form class="left" id="formLogin" name="formLogin" action="/login/" method="post">
+                        <input type="hidden" name="fn" value="login">
+                        <header class="catalog-title">Вход в систему</header>
+                        <label class="error-msg">Такого e-mail адреса в нашей базе
+                            не существует</label>
+                        <input type="email" name="login" placeholder="Ваш e-mail" value="" required="">
+                        <input type="password" placeholder="Ваш пароль" name="pass" required="">
+                        <button class="button-buy" onclick="$('#formLogin').submit()">Вход</button>
+                        <a href="/dist/pages/recovery.html">Забыли пароль?</a>
+                    </form>
+                    <form class="right" id="formReg" action="/login/" method="post">
+                        <input type="hidden" name="fn" value="reg">
+                        <header class="catalog-title">Регистрация</header>
+                        <input type="email" placeholder="Ваш email*" name="f_login" required="">
+                        <input type="text" placeholder="Ваше имя*" name="f_name" required="">
+                        <input type="password" placeholder="Ваш пароль*" name="f_pass" required="">
+                        <input type="password" placeholder="Повторите свой пароль*" name="f_pass2" required="">
+                        <label class="number-verification">
+                            <input type="text" name="f_capcha" placeholder="Код проверки*" required="">
+                            <span class="captcha">
+                                <img src="http://placehold.it/114x40" style="width: 114px; height: 40px;" alt="captcha">
+                            </span>
+                            <span class="clearfix"></span>
+                        </label>
+                        <input type="checkbox" id="agreement" name="rule" required="" value="1">
+                        <label for="agreement" class="checkbox">
+                            <a href="http://pay.key4mate.com.ua/usloviya/">Я соглас(ен/на) с правилами</a>
+                        </label>
+                        <div class="clearfix"></div>
+                        <button class="button-buy">Регистрация</button>
+                        <p class="notes">* поля являются обязательными для заполнения</p>
+                    </form>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+            <div class="right-col">
+                <div class="col-item desktop">
+                    <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form" id="formSearch">
+                        <input type="text" placeholder="" name="s" rel="nofollow">
+
+                        <div id="search" onclick="$('#formSearch').submit()">
+                            <span class="icon icon-search"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <footer class="main">
+            <div class="content">
+                <div class="social">
+                    <ul>
+                        <li><a href="http://vkontakte.ru/key4mate" class="icon icon-fb"></a></li>
+                        <li><a href="http://www.facebook.com/home.php?sk=group_171832906173276"
+                               class="icon icon-vk"></a></li>
+                        <li><a href="http://www.youtube.com/user/Key4mate" class="icon icon-youtube"></a></li>
+                        <li><a href="skype:bogachenko4?call" class="icon icon-skype"></a></li>
+                    </ul>
+                </div>
+                <div class="copyrights">
+                    <p>&#169; 2010-2015 <span>Key4mate — ваш ключ к успеху!&nbsp;</span><span class="created-by">Created by <a
+                            href="http://www.groupkb.com">groupkb</a></span></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<div class="sb-slidebar sb-right bg-white sb-width-custom" data-sb-width="320px">
+    <div class="content">
+        <div class="btn-close sb-toggle-right"><span class="icon icon-close"></span></div>
+
+        <ul>
+            <li class="search">
+                <form action="/dist/pages/search-result.html" method="get" name="search-input" class="search-form"
+                      id="formSearch">
+                    <input type="text" placeholder="" name="s" rel="nofollow">
+
+                    <div id="search" onclick="$('#formSearch').submit()">
+                        <span class="icon icon-search"></span>
+                    </div>
+                </form>
+            </li>
+            <li><a href="/dist/pages/catalog.html">Каталог уроков</a></li>
+            <li><a href="/dist/pages/blog.html">Блог</a></li>
+            <li><a href="/dist/pages/about.html">О key4mate</a></li>
+            <li><a href="/dist/pages/contacts.html">Контакты</a></li>
+
+            <!--ДЛЯ НЕЗАРЕГИСТРИРОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ-->
+            <li><a href="/dist/pages/login.html">Вход</a></li>
+            <li><a href="/dist/pages/login.html">Регистрация</a></li>
+
+            <!--ДЛЯ ЗАРЕГИСТРИРОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ-->
+            <li><a href="/dist/pages/profile.html">Мой профиль</a></li>
+            <li><a href="/dist/pages/order-history.html">Мои покупки</a></li>
+            <li><a href="">Выход</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<script src="/dist/js/jquery.min.js"></script>
+<script src="/dist/js/slidebars.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+
+            //***боковое слайд-меню
+            var Slidebars = new $.slidebars({
+                scrollLock: true
+            });
+
+            function eventHandler(e) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+
+            $('.sb-toggle-right').on('click', function (e) {
+                eventHandler(e);
+                Slidebars.slidebars.toggle('left');
+            });
+
+        });
+    })(jQuery);
+
+</script>
+</body>
+</html>
